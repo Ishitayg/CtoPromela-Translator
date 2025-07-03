@@ -1,4 +1,3 @@
-# CtoPromela-Translator
 C to Promela Translator
 =======================
 

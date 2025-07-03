@@ -1,0 +1,13 @@
+first - 
+C:\win_flex_bison-2.5.25\bison.exe -d parser.y
+
+then - 
+C:\win_flex_bison-2.5.25\flex.exe -o lexer.c lexer.l
+
+then 
+g++ -o translator lexer.c parser.tab.c -I. -std=c++11 -D_GNU_SOURCE
+
+then
+cmd /c "translator.exe < test.c > test.pml"
+
+this converts test.c to promela code test.pml but woh  ho nhi rha
